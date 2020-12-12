@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 4377252853636707190}
   - component: {fileID: 4377252853636707191}
   - component: {fileID: 4377252853636707184}
+  - component: {fileID: 4887391954705509538}
   m_Layer: 0
   m_Name: PewPewGunBulletObject
   m_TagString: Untagged
@@ -273,3 +274,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emenyObject: {fileID: 0}
   speed: 10
+--- !u!114 &4887391954705509538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4377252853636707185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0535467cc0cfaee46aba0c2d648255e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emenyObject: {fileID: 0}
