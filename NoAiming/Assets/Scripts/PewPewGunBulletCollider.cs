@@ -10,18 +10,18 @@ public class PewPewGunBulletCollider : MonoBehaviour
     //儲存傷害(從PewPewGunFire匯入)
     [HideInInspector] public int damage;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("collision! " + "hit " + collision.gameObject.name);
-        if (collision.gameObject.tag == "Solid Block")
+        Debug.Log("collision! " + "hit " + collider.gameObject.name);
+        if (collider.gameObject.tag == "Solid Block")
         {
             Destroy(gameObject);
         }
 
-        if (collision.gameObject == emenyObject)
+        if (collider.gameObject == emenyObject)
         {
-            Debug.Log(collision.gameObject.name + "is hit." + "caused damage " + damage);
-            collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
+            Debug.Log(collider.gameObject.name + "is hit." + "caused damage " + damage);
+            collider.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
             Destroy(gameObject);
         }
     }
