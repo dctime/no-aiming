@@ -15,6 +15,7 @@ public class PewPewGunFire : MonoBehaviour
 
     [Header("槍枝參數")]
     [SerializeField] private float fireRate;
+    [SerializeField] private int damage;
 
     //儲存最近發射的子彈
     private GameObject currentBullet;
@@ -37,7 +38,9 @@ public class PewPewGunFire : MonoBehaviour
             Debug.Log("currentBullet is instantiate!");
             //將產生出來的物件之元件加入一些參數
             currentBullet.GetComponent<PewPewGunBulletMovement>().emenyObject = emenyObject;
+
             currentBullet.GetComponent<PewPewGunBulletCollider>().emenyObject = emenyObject;
+            currentBullet.GetComponent<PewPewGunBulletCollider>().damage = damage;
 
         }
     }

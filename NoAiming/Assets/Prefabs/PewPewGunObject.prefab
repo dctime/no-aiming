@@ -144,6 +144,8 @@ MonoBehaviour:
     type: 3}
   muzzle: {fileID: 9102850893609913616}
   fireRate: 0
+  damage: 10
+  emenyObject: {fileID: 0}
 --- !u!1 &9102850893609913616
 GameObject:
   m_ObjectHideFlags: 0

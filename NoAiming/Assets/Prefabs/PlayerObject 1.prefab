@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4504863487224578469}
   - component: {fileID: 4504863487224578464}
   - component: {fileID: 2879590663698527253}
+  - component: {fileID: 7963294245047821657}
   m_Layer: 0
   m_Name: PlayerObject 1
   m_TagString: Untagged
@@ -172,7 +173,7 @@ MonoBehaviour:
   moveRightKey: 100
   jumpKey: 119
   moveSpeed: 10
-  jumpForce: 1000
+  jumpForce: 1500
   checkGroundedLength: 0.5
   groundLayer:
     serializedVersion: 2
@@ -190,6 +191,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireKey: 102
+--- !u!114 &7963294245047821657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504863487224578468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dbcf7ca5def3e4d85940fe16b8e99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &4504863487511466340
 GameObject:
   m_ObjectHideFlags: 0
