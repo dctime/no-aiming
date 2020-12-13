@@ -13,6 +13,6 @@ public class ScoreBarScoreHandler : MonoBehaviour
 
     private void Update()
     {
-        scoreBar.fillAmount = player.GetComponent<PlayerScoreManager>().GetScore() / 100f;
+        scoreBar.fillAmount = player.GetComponent<PlayerScoreManager>().GetScore() / 50f;
     }
 }

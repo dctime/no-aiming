@@ -30,9 +30,9 @@ public class PlayerScoreManager : MonoBehaviour
             time = 0;
         }
 
-        if (score > 100)
+        if (score > 50)
         {
-            score = 100;
+            score = 50;
         }
     }
 

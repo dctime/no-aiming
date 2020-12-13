@@ -30,6 +30,11 @@ public class PlayerHealthManager : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        if (transform.position.y <= -20)
+        {
+            health = 0;
+        }
     }
 
 }

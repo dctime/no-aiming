@@ -32,6 +32,7 @@ public class GameDirectorSpawnHandler : MonoBehaviour
         {
             //回復生命
             player.GetComponent<PlayerHealthManager>().FullHealth();
+            player.transform.position = playerStartPos.transform.position;
             //開始倒數重生時間
             playerCurrentRespawnTime += Time.deltaTime;
             if (playerCurrentRespawnTime >= playerRespawnTime)
@@ -39,7 +40,6 @@ public class GameDirectorSpawnHandler : MonoBehaviour
                 //Debug.Log("player Respawn!");
                 //讓他可以被看到
                 player.SetActive(true);
-                player.transform.position = playerStartPos.transform.position;
                 playerCurrentRespawnTime = 0;
             }
         }
@@ -49,6 +49,7 @@ public class GameDirectorSpawnHandler : MonoBehaviour
         {
             //回復生命
             player2.GetComponent<PlayerHealthManager>().FullHealth();
+            player2.transform.position = player2StartPos.transform.position;
             //開始倒數重生時間
             player2CurrentRespawnTime += Time.deltaTime;
             //如果重生時間到了
@@ -56,7 +57,6 @@ public class GameDirectorSpawnHandler : MonoBehaviour
             {
                 //Debug.Log("player2 respawn!");
                 player2.SetActive(true);
-                player2.transform.position = player2StartPos.transform.position;
                 player2CurrentRespawnTime = 0;
             }
         }

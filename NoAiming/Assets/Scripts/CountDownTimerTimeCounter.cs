@@ -14,4 +14,9 @@ public class CountDownTimerTimeCounter : MonoBehaviour
 
         GetComponent<Text>().text = ((int) time).ToString();
     }
+
+    public float GetTime()
+    {
+        return time;
+    }
 }
