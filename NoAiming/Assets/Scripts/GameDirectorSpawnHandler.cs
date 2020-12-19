@@ -22,6 +22,7 @@ public class GameDirectorSpawnHandler : MonoBehaviour
 
     private void Start()
     {
+        //當重生時，將重生倒數歸零
         playerCurrentRespawnTime = 0;
         player2CurrentRespawnTime = 0;
     }

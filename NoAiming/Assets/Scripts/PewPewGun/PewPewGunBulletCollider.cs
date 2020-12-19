@@ -12,15 +12,17 @@ public class PewPewGunBulletCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("collision! " + "hit " + collider.gameObject.name);
+        //如果子彈撞擊的物件有"Solid Block"標籤
+        //Debug.Log("collision! " + "hit " + collider.gameObject.name);
         if (collider.gameObject.tag == "Solid Block")
         {
             Destroy(gameObject);
         }
 
+        //如果打中敵人
         if (collider.gameObject == emenyObject)
         {
-            Debug.Log(collider.gameObject.name + "is hit." + "caused damage " + damage);
+            //Debug.Log(collider.gameObject.name + "is hit." + "caused damage " + damage);
             collider.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(damage);
             Destroy(gameObject);
         }
