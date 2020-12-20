@@ -23,6 +23,9 @@ public class PewPewGunFire : MonoBehaviour
     [Header("敵方物件")]
     [SerializeField] private GameObject emenyObject;
 
+    [Header("開火音效")]
+    [SerializeField] AudioSource fireSoundEffect;
+
     private void Awake()
     {
         //初始化fireKey
@@ -42,6 +45,8 @@ public class PewPewGunFire : MonoBehaviour
             //給PewPewGunBulletCollider敵方物件與傷害
             currentBullet.GetComponent<PewPewGunBulletCollider>().emenyObject = emenyObject;
             currentBullet.GetComponent<PewPewGunBulletCollider>().damage = damage;
+            //播放音效
+            fireSoundEffect.Play();
 
         }
     }

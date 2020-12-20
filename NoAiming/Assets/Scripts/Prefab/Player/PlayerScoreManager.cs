@@ -17,6 +17,9 @@ public class PlayerScoreManager : MonoBehaviour
     [Header("導演(獲得最大分數使用)")]
     [SerializeField] private GameObject gameDirector;
 
+    [Header("得分音效")]
+    [SerializeField] private AudioSource scoreSoundEffect;
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -30,6 +33,8 @@ public class PlayerScoreManager : MonoBehaviour
                 //Debug.Log(gameObject.name + " added 1 point");
                 score += 1;
                 time = 0;
+                //播放得分音效
+                scoreSoundEffect.Play();
             }
             
             time += Time.deltaTime;
