@@ -1066,6 +1066,12 @@ PrefabInstance:
       propertyPath: startHealth
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 7963294245047821657, guid: 0def00714e883e3408a7d87d9d4b14e7,
+        type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 6094956491494334816, guid: 9b446be234b5b8247b251c013d202026,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0def00714e883e3408a7d87d9d4b14e7, type: 3}
 --- !u!1001 &1618272252
@@ -1905,10 +1911,12 @@ PrefabInstance:
       objectReference: {fileID: 2131196803}
     - target: {fileID: 7963294245047821657, guid: 0def00714e883e3408a7d87d9d4b14e7,
         type: 3}
-      propertyPath: startHealth
-      value: 100
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 634719073706493787, guid: 94334ea4954532a4aa4e1d317abf6665,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 5853762193458553912, guid: 0def00714e883e3408a7d87d9d4b14e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0def00714e883e3408a7d87d9d4b14e7, type: 3}
 --- !u!1001 &8079843686160575899
 PrefabInstance:
