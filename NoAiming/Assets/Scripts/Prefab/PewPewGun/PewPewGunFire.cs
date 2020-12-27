@@ -38,7 +38,6 @@ public class PewPewGunFire : MonoBehaviour
         {
             //產生子彈，並放到muzzle
             currentBullet = Instantiate(bulletType, muzzle.transform.position, transform.rotation);
-            Debug.Log("currentBullet is instantiate!");
             // --- 將產生出來的物件之元件加入一些參數 ---
             //給PewPewGunBulletCollider敵方物件
             currentBullet.GetComponent<PewPewGunBulletMovement>().emenyObject = emenyObject;

@@ -7,6 +7,9 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("一開始的生命值")]
     [SerializeField] private int startHealth;
 
+    [Header("死亡特效")]
+    [SerializeField] private GameObject deathParticle;
+
     //真正的生命值
     private int health;
     public void TakeDamage(int damage)
@@ -29,6 +32,8 @@ public class PlayerHealthManager : MonoBehaviour
         //如果生命值是零(或小於)
         if (health <= 0)
         {
+            //播放死亡特效
+            Instantiate(deathParticle,transform);
             //玩家死亡
             gameObject.SetActive(false);
         }
