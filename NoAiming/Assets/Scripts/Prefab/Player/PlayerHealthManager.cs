@@ -33,7 +33,7 @@ public class PlayerHealthManager : MonoBehaviour
         if (health <= 0)
         {
             //播放死亡特效
-            Instantiate(deathParticle,transform);
+            Instantiate(deathParticle, transform.position, transform.rotation);
             //玩家死亡
             gameObject.SetActive(false);
         }
