@@ -1141,7 +1141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Stand on the red floor to get ponts\nThe first player who got 50 points
+  m_Text: "Stand on the red floor to get points.\nThe first player who gets 50 points
     wins.\nIf the timer runs out, \nthe player who has most points wins."
 --- !u!222 &2144082168
 CanvasRenderer:
