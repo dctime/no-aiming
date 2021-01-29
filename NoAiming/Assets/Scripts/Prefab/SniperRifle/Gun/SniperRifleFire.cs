@@ -22,6 +22,10 @@ public class SniperRifleFire : MonoBehaviour
     [Header("槍枝參數")]
     [SerializeField] private float fireRate;
     [SerializeField] private int damage;
+    public float fireRateGetter()
+    {
+        return fireRate;
+    }
 
     //儲存最近發射的子彈
     private GameObject currentBullet;
@@ -35,6 +39,11 @@ public class SniperRifleFire : MonoBehaviour
     //儲存已冷卻秒數
     private float coolDownTimer;
 
+    public float CoolDownTimerGetter()
+    {
+        return coolDownTimer;
+    }
+
     //儲存是否可以瞄準
     private bool canAim;
 
@@ -44,7 +53,7 @@ public class SniperRifleFire : MonoBehaviour
     private void Start()
     {
         //初始化fireKey
-        fireKey = gameObject.transform.parent.gameObject.GetComponent<PlayerFire>().fireKey;
+        fireKey = gameObject.transform.parent.parent.gameObject.GetComponent<PlayerFire>().fireKey;
     }
     void Update()
     {
@@ -86,6 +95,7 @@ public class SniperRifleFire : MonoBehaviour
         else //當冷卻已完成時，允許瞄準
         {
             canAim = true;
+            coolDownTimer = fireRate;
         }
 
         
