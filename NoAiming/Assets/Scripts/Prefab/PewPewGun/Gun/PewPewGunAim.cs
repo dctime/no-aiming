@@ -5,12 +5,25 @@ using UnityEngine;
 public class PewPewGunAim : MonoBehaviour
 {
     [Header("獲得敵方資料")]
-    [SerializeField] GameObject emenyObject;
+    [SerializeField] GameObject emenyObjectGroup;
+    GameObject emenyObject;
 
     //相對位移
     private Vector3 relativePosition;
     //計算角度暫存區
     private float fireAngle;
+
+    private void Start()
+    {
+        //將emenyObjectGroup裡找到是Active的物件，存入emenyObject(戰鬥開始前要先把雙方的角色先在Awake裡Active)
+        for (int i = 0; i < emenyObjectGroup.transform.childCount; i++)
+        {
+            if (emenyObjectGroup.transform.GetChild(i).gameObject.activeSelf)
+            {
+                emenyObject = emenyObjectGroup.transform.GetChild(i).gameObject;
+            }
+        }
+    }
     private void Update()
     {
 
