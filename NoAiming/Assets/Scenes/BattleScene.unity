@@ -991,6 +991,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8079843687571492431, guid: a8e713513f20d0a40a84481a47ddd443,
         type: 3}
+      propertyPath: playerGroup
+      value: 
+      objectReference: {fileID: 1828043590}
+    - target: {fileID: 8079843687571492431, guid: a8e713513f20d0a40a84481a47ddd443,
+        type: 3}
       propertyPath: gameDirector
       value: 
       objectReference: {fileID: 2131196803}
@@ -2421,6 +2426,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4504863487873754857}
+    - target: {fileID: 8079843687571492431, guid: a8e713513f20d0a40a84481a47ddd443,
+        type: 3}
+      propertyPath: playerGroup
+      value: 
+      objectReference: {fileID: 750165039}
     - target: {fileID: 8079843687571492431, guid: a8e713513f20d0a40a84481a47ddd443,
         type: 3}
       propertyPath: gameDirector
