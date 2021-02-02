@@ -304,6 +304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PewPewGunner
       objectReference: {fileID: 0}
+    - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 461712114647039322, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_Color.b
@@ -324,6 +329,11 @@ PrefabInstance:
       propertyPath: fireKey
       value: 47
       objectReference: {fileID: 0}
+    - target: {fileID: 3478411384597883764, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 522368903}
     - target: {fileID: 6228306955590773227, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: deathParticle
@@ -539,6 +549,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &522368903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4125593719554720621, guid: 01f754971163f214489fb3ae1b852b0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 268654047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &523808028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -681,7 +697,7 @@ PrefabInstance:
     - target: {fileID: 6433991202828772511, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6433991204543714515, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
@@ -1446,6 +1462,12 @@ Transform:
   m_Father: {fileID: 1667448666}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1796373223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4125593719554720621, guid: 01f754971163f214489fb3ae1b852b0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8311724766100024997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1828043590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,7 +1973,7 @@ PrefabInstance:
     - target: {fileID: 6433991202828772511, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02865d272418c0a44a2cf0d065c1472b, type: 3}
@@ -2169,8 +2191,13 @@ PrefabInstance:
     - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3478411384597883764, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 1796373223}
     - target: {fileID: 8539130972707953742, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: emenyObjectGroup

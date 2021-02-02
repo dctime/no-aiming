@@ -14,8 +14,45 @@ public class PewPewGunFire : MonoBehaviour
     [SerializeField] private GameObject muzzle;
 
     [Header("槍枝參數")]
-    [SerializeField] private float fireRate;
-    [SerializeField] private int damage;
+    [SerializeField] private float coolTime; //發射與發射的間隔
+    [SerializeField] private int burstPerFire; //每次發射有幾個子彈噴出來
+    [SerializeField] private float reloadTime; //彈夾重裝填的時間
+    public float ReloadTimeGetter()
+    {
+        return reloadTime;
+    }
+    [SerializeField] private int damage; //每顆子彈的傷害
+    [SerializeField] private int clipAmmo; //每次裝填發射次數
+    public int ClipAmmoGetter()
+    {
+        return clipAmmo;
+    }
+    [SerializeField] private float bulletFireDelay; //每次發射子彈與子彈之間射擊延遲時間
+
+    //儲存重裝彈時間
+    private float reloadingTime;
+
+    public float ReloadingTimeGetter()
+    {
+        return reloadingTime;
+    }
+
+    //儲存冷卻的時間
+    private float coolingTime;
+
+    //儲存每顆子彈與每顆子彈的發射間隔時間
+    private float bulletFireDelayingTime;
+
+    //儲存剩餘發射數
+    private int clipAmmoLeft;
+    public int ClipAmmoLeftGetter()
+    {
+        return clipAmmoLeft;
+    }
+
+    //儲存此發射剩餘子彈數
+    private int burstLeft;
+
 
     //儲存最近發射的子彈
     private GameObject currentBullet;
@@ -44,7 +81,8 @@ public class PewPewGunFire : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(fireKey))
+        //如果按下發射鍵，冷卻時間完成，裝填完成，也延遲完成
+        if (Input.GetKey(fireKey) && coolingTime == coolTime && reloadingTime == reloadTime && bulletFireDelayingTime == bulletFireDelay)
         {
             //產生子彈，並放到muzzle
             currentBullet = Instantiate(bulletType, muzzle.transform.position, transform.rotation);
@@ -56,7 +94,58 @@ public class PewPewGunFire : MonoBehaviour
             currentBullet.GetComponent<PewPewGunBulletCollider>().damage = damage;
             //播放音效
             fireSoundEffect.Play();
+            //此發射少一顆子彈
+            burstLeft = burstLeft - 1;
+            //開始延遲
+            bulletFireDelayingTime = 0;
+            
+            //如果此發射沒有子彈了，開始冷卻，並減少一次的發射
+            if (burstLeft == 0)
+            {
+                coolingTime = 0;
+                clipAmmoLeft -= 1;
 
+                //如果已沒有發射次數，開始裝填
+                if (clipAmmoLeft == 0)
+                {
+                    reloadingTime = 0;
+                }
+            }
+
+        }
+
+        //如果需要冷卻，冷卻
+        if (coolingTime < coolTime)
+        {
+            coolingTime += Time.deltaTime;
+            //將此發射剩餘子彈數弄到設定值
+            burstLeft = burstPerFire;
+        }
+        else
+        {
+            coolingTime = coolTime;
+        }
+
+        //如果需要裝填，裝填
+        if (reloadingTime < reloadTime)
+        {
+            reloadingTime += Time.deltaTime;
+            //將剩餘發射數弄到設定值
+            clipAmmoLeft = clipAmmo;
+        }
+        else
+        {
+            reloadingTime = reloadTime;
+        }
+
+        //如果需要延遲，延遲
+        if (bulletFireDelayingTime < bulletFireDelay)
+        {
+            bulletFireDelayingTime += Time.deltaTime;
+        }
+        else
+        {
+            bulletFireDelayingTime = bulletFireDelay;
         }
     }
 

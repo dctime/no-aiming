@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd96bd5d786c648a79136ff2093a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emenyObject: {fileID: 0}
+  emenyObjectGroup: {fileID: 0}
 --- !u!114 &4784669390562966995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,9 +548,9 @@ MonoBehaviour:
   bulletType: {fileID: 3149472777644313485, guid: 130bf13076360374aa1e9cc3c1f5e3ed,
     type: 3}
   muzzle: {fileID: 2483954794082873245}
-  fireRate: 5
+  fireRate: 3
   damage: 100
-  emenyObject: {fileID: 0}
+  emenyObjectGroup: {fileID: 0}
   fireSoundEffect: {fileID: 2483954794531938490}
 --- !u!82 &2483954794531938490
 AudioSource:
