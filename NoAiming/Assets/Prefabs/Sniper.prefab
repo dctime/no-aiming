@@ -689,12 +689,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6433991202828772504}
   - component: {fileID: 6433991202828772505}
-  - component: {fileID: 6433991202828772510}
   - component: {fileID: 6433991202828772507}
   - component: {fileID: 4627450695777702190}
   - component: {fileID: 670210048147980386}
   - component: {fileID: 2596794335358346150}
   - component: {fileID: 8426247916932804562}
+  - component: {fileID: 665832749394003139}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Player
@@ -740,22 +740,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &6433991202828772510
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6433991202828772511}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.983843
 --- !u!114 &6433991202828772507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,6 +901,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &665832749394003139
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6433991202828772511}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.041558266, y: 0.0000010728836}
+  m_Size: {x: 1.996109, y: 1.996109}
+  m_Direction: 0
 --- !u!1 &6433991203146003551
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1018,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 80f082320dd2fa8428f0344f10df5c19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1484c691c349be34182c5abedeabc3c4, type: 3}
   m_Color: {r: 0, g: 0.11868954, b: 0.6509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0

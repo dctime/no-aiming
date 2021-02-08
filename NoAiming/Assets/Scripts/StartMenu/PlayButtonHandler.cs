@@ -7,6 +7,6 @@ public class PlayButtonHandler : MonoBehaviour
 {
     public void ButtonDown()
     {
-        SceneManager.LoadScene("BattleScene");
+        SceneManager.LoadScene("SelectCharacterScene");
     }
 }

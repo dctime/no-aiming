@@ -543,7 +543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -209.36}
+  m_LocalPosition: {x: 0, y: 0, z: -708.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -562,6 +562,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1828043591}
     m_Modifications:
+    - target: {fileID: 665832749394003139, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.93649
+      objectReference: {fileID: 0}
+    - target: {fileID: 665832749394003139, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.0159817
+      objectReference: {fileID: 0}
+    - target: {fileID: 665832749394003139, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.011748791
+      objectReference: {fileID: 0}
+    - target: {fileID: 665832749394003139, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00993517
+      objectReference: {fileID: 0}
     - target: {fileID: 670210048147980386, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: deathParticle
@@ -697,13 +717,19 @@ PrefabInstance:
     - target: {fileID: 6433991202828772511, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433991204543714515, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6433991204543714515, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1484c691c349be34182c5abedeabc3c4,
+        type: 3}
     - target: {fileID: 6433991204543714515, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_Color.b
@@ -1732,6 +1758,7 @@ GameObject:
   - component: {fileID: 2131196805}
   - component: {fileID: 2131196804}
   - component: {fileID: 2131196806}
+  - component: {fileID: 2131196807}
   m_Layer: 0
   m_Name: GameDirector
   m_TagString: Untagged
@@ -1787,6 +1814,20 @@ MonoBehaviour:
   player2Group: {fileID: 1828043590}
   countDownTimer: {fileID: 1660120167}
   winScore: 50
+--- !u!114 &2131196807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131196803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b82d4afb3ea7348ab631183f53895d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Group: {fileID: 750165039}
+  player2Group: {fileID: 1828043590}
 --- !u!1001 &2145789787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1918,17 +1959,17 @@ PrefabInstance:
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.90913
+      value: -39.88
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38015556
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -77.14453
+      value: -2.7578125
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
@@ -1938,17 +1979,17 @@ PrefabInstance:
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
@@ -1965,6 +2006,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6433991202828772507, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: checkGroundedLength
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772511, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_Name
@@ -1974,6 +2020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6433991204543714513, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02865d272418c0a44a2cf0d065c1472b, type: 3}
@@ -2191,8 +2242,14 @@ PrefabInstance:
     - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 461712114647039322, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80f082320dd2fa8428f0344f10df5c19,
+        type: 3}
     - target: {fileID: 3478411384597883764, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: gun
