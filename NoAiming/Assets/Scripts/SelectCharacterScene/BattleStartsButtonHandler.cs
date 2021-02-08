@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButtonHandler : MonoBehaviour
+public class BattleStartsButtonHandler : MonoBehaviour
 {
-    public void ButtonDown()
+    public void Button_Clicked()
     {
-        SceneManager.LoadScene("SelectCharacterScene");
+        SceneManager.LoadScene("BattleScene");
     }
 }

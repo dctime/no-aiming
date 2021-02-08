@@ -717,7 +717,7 @@ PrefabInstance:
     - target: {fileID: 6433991202828772511, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6433991204543714515, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
@@ -1758,6 +1758,7 @@ GameObject:
   - component: {fileID: 2131196805}
   - component: {fileID: 2131196804}
   - component: {fileID: 2131196806}
+  - component: {fileID: 2131196807}
   m_Layer: 0
   m_Name: GameDirector
   m_TagString: Untagged
@@ -1813,6 +1814,20 @@ MonoBehaviour:
   player2Group: {fileID: 1828043590}
   countDownTimer: {fileID: 1660120167}
   winScore: 50
+--- !u!114 &2131196807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131196803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b82d4afb3ea7348ab631183f53895d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Group: {fileID: 750165039}
+  player2Group: {fileID: 1828043590}
 --- !u!1001 &2145789787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2227,7 +2242,7 @@ PrefabInstance:
     - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 461712114647039322, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
