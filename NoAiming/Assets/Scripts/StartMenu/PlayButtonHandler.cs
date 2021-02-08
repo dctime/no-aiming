@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayButtonHandler : MonoBehaviour
 {
+    //當按鈕被按下
     public void ButtonDown()
     {
+        //切換至SelectCharacterScene
         SceneManager.LoadScene("SelectCharacterScene");
     }
 }
