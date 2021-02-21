@@ -783,8 +783,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.1, y: -138.3}
-  m_SizeDelta: {x: 341.74066, y: 225.71878}
+  m_AnchoredPosition: {x: 54.6, y: -216.6}
+  m_SizeDelta: {x: 322.74487, y: 382.43375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743368910
 MonoBehaviour:
@@ -819,7 +819,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Left/Blue:\n  Movement: WAD\n  Shoot: F\n\nRight/Red:\n  Movement:Up/Left/Right
-    Arrow\n  Shoot: / "
+    Arrow\n  Shoot: / \n\nPress Alt + F4 to leave the game immediately.\n\nEvery
+    weapon has their \nspecific usage, practice\nin the prepare room and \nfind it
+    out."
 --- !u!222 &1743368911
 CanvasRenderer:
   m_ObjectHideFlags: 0

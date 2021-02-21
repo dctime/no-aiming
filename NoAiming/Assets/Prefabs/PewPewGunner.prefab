@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 100
+  playerModel: {fileID: 5430497685224590919}
   deathParticle: {fileID: 634719073706493787, guid: 94334ea4954532a4aa4e1d317abf6665,
     type: 3}
 --- !u!114 &8875432549502994991
@@ -279,6 +280,7 @@ GameObject:
   - component: {fileID: 461712114647039321}
   - component: {fileID: 461712114647039322}
   - component: {fileID: 7624757389595289738}
+  - component: {fileID: 5430497685224590919}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -414,6 +416,21 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &5430497685224590919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461712114647039320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332cca447118b6644a25470d1b9033e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullHealth: {fileID: 21300000, guid: 80f082320dd2fa8428f0344f10df5c19, type: 3}
+  halfHealth: {fileID: 21300000, guid: 2c90acc6662d48a4ea3644b7851267a6, type: 3}
+  spriteRenderer: {fileID: 461712114647039322}
 --- !u!1 &735255537628759020
 GameObject:
   m_ObjectHideFlags: 0

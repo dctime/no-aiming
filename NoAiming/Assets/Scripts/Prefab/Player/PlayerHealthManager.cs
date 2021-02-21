@@ -7,6 +7,9 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("一開始的生命值")]
     [SerializeField] private int startHealth;
 
+    [Header("渲染器控制腳本")]
+    [SerializeField] private PlayerModelController playerModel;
+
     [Header("死亡特效")]
     [SerializeField] private GameObject deathParticle;
 
@@ -29,6 +32,15 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void Update()
     {
+        if (health <= startHealth && (float) health / (float)startHealth > 0.5)
+        {
+            playerModel.TurnToFullHealth();
+        }
+        else if ((float)health / (float)startHealth <= 0.5 && health > 0)
+        {
+            playerModel.TurnToHalfHealth();
+        }
+
         //如果生命值是零(或小於)
         if (health <= 0)
         {
