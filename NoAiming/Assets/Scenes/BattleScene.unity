@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 461712114148429073, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 461712114148429073, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
@@ -337,7 +337,7 @@ PrefabInstance:
     - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 461712114647039322, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
@@ -370,6 +370,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6094956491494334816, guid: 9b446be234b5b8247b251c013d202026,
         type: 3}
+    - target: {fileID: 6228306955590773227, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: playerScoreManager
+      value: 
+      objectReference: {fileID: 1161771067}
     - target: {fileID: 8539130972707953742, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: emenyObjectGroup
@@ -618,6 +623,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6094956491494334816, guid: 9b446be234b5b8247b251c013d202026,
         type: 3}
+    - target: {fileID: 670210048147980386, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: playerScoreManager
+      value: 
+      objectReference: {fileID: 667367609}
     - target: {fileID: 2596794335358346150, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: gameDirector
@@ -672,7 +682,7 @@ PrefabInstance:
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
@@ -783,6 +793,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 523808028}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &667367609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2596794335358346150, guid: 02865d272418c0a44a2cf0d065c1472b,
+    type: 3}
+  m_PrefabInstance: {fileID: 523808028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4289974a3d0b72742b61adf09f70e323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &687044909 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8079843687571492424, guid: a8e713513f20d0a40a84481a47ddd443,
@@ -981,6 +1003,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1831145069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1161771067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8875432549502994991, guid: 01f754971163f214489fb3ae1b852b0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 268654047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4289974a3d0b72742b61adf09f70e323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1244288311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,8 +1589,8 @@ Transform:
   m_LocalPosition: {x: 27.69913, y: 3.4598444, z: 74.38672}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 523808029}
   - {fileID: 292904067}
+  - {fileID: 523808029}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1754,6 +1788,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 8079843686160575899}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1970199826 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8875432549502994991, guid: 01f754971163f214489fb3ae1b852b0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8311724766100024997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4289974a3d0b72742b61adf09f70e323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2069782364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,6 +2085,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7480018906058277494}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4504863487873754860 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2596794335358346150, guid: 02865d272418c0a44a2cf0d065c1472b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7480018906058277494}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504863487873754857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4289974a3d0b72742b61adf09f70e323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4504863487873754862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6433991202828772504, guid: 02865d272418c0a44a2cf0d065c1472b,
@@ -2052,6 +2110,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 750165040}
     m_Modifications:
+    - target: {fileID: 670210048147980386, guid: 02865d272418c0a44a2cf0d065c1472b,
+        type: 3}
+      propertyPath: playerScoreManager
+      value: 
+      objectReference: {fileID: 4504863487873754860}
     - target: {fileID: 2596794335358346150, guid: 02865d272418c0a44a2cf0d065c1472b,
         type: 3}
       propertyPath: gameDirector
@@ -2368,7 +2431,7 @@ PrefabInstance:
     - target: {fileID: 461712114148429078, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 461712114647039322, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
@@ -2381,6 +2444,11 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 1796373223}
+    - target: {fileID: 6228306955590773227, guid: 01f754971163f214489fb3ae1b852b0f,
+        type: 3}
+      propertyPath: playerScoreManager
+      value: 
+      objectReference: {fileID: 1970199826}
     - target: {fileID: 8539130972707953742, guid: 01f754971163f214489fb3ae1b852b0f,
         type: 3}
       propertyPath: emenyObjectGroup

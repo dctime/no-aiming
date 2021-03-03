@@ -789,6 +789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 100
+  playerModel: {fileID: 0}
+  playerScoreManager: {fileID: 0}
   deathParticle: {fileID: 634719073706493787, guid: 94334ea4954532a4aa4e1d317abf6665,
     type: 3}
 --- !u!114 &2596794335358346150
@@ -805,6 +807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameDirector: {fileID: 0}
   scoreSoundEffect: {fileID: 8426247916932804562}
+  losePointsWhenDeath: 5
 --- !u!82 &8426247916932804562
 AudioSource:
   m_ObjectHideFlags: 0

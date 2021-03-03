@@ -10,6 +10,9 @@ public class PlayerHealthManager : MonoBehaviour
     [Header("渲染器控制腳本")]
     [SerializeField] private PlayerModelController playerModel;
 
+    [Header("分數控制腳本")]
+    [SerializeField] private PlayerScoreManager playerScoreManager;
+
     [Header("死亡特效")]
     [SerializeField] private GameObject deathParticle;
 
@@ -46,6 +49,8 @@ public class PlayerHealthManager : MonoBehaviour
         {
             //播放死亡特效
             Instantiate(deathParticle, transform.position, transform.rotation);
+            //扣除玩家分數
+            playerScoreManager.LosingPointsWhenDeath();
             //玩家死亡
             gameObject.SetActive(false);
         }
