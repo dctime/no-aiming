@@ -20,6 +20,9 @@ public class PlayerScoreManager : MonoBehaviour
     [Header("得分音效")]
     [SerializeField] private AudioSource scoreSoundEffect;
 
+    [Header("死亡成本(單位為分數)")]
+    [SerializeField] private int losePointsWhenDeath;
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -50,6 +53,19 @@ public class PlayerScoreManager : MonoBehaviour
         if (score > gameDirector.GetComponent<GameDirectorWinHandler>().GetWinScore())
         {
             score = gameDirector.GetComponent<GameDirectorWinHandler>().GetWinScore();
+        }
+    }
+
+    //當死亡時失去分數(由)
+    public void LosingPointsWhenDeath()
+    {
+        //將分數扣除
+        score -= losePointsWhenDeath;
+        
+        //如果扣除後分數小於0，將其分數設為0
+        if (score < 0)
+        {
+            score = 0;
         }
     }
 }
