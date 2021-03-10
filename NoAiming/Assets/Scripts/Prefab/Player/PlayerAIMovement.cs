@@ -15,7 +15,7 @@ public class PlayerAIMovement : MonoBehaviour
         //如果AI自動控制開啟，手動控制還是保持開啟，提出警告
         if (PlayerMovementScript.activeSelf == true)
         {
-            Debug.Log("WARNING : Both Modes Are Activated!");
+            Debug.Log("WARNING : Manual and Auto modes are activated! Please close one mode or something unexcepted will happend.`");
         }
     }
 }
